@@ -6,6 +6,7 @@ from threading import Thread
 import wiringpi2 as wiringpi
 import data_processing_API as dp
 
+
 gpio = wiringpi.GPIO(wiringpi.GPIO.WPI_MODE_GPIO)
 arduino = serial.Serial('/dev/ttyAMA0', baudrate=115200, timeout=3.0)
 go_out = 0
